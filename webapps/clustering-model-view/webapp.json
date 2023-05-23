@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "label": "Clustering Model View Add Ons",
+    "description": "This is a test for custom model views",
+    "icon": "icon-sitemap"
+  },
+
+  "baseType": "DASH",
+  "standardWebAppLibraries": ["dash", "dataiku", "plotly"],
+  "hasBackend": "true",
+
+  "roles": [{
+      "type": "SAVED_MODEL",
+      "contentType": "clustering",
+      "targetParamsKey": "modelId",
+      "pathParamsKey": "versionId"
+    },
+    {
+      "type": "ANALYSIS",
+      "contentType": "clustering",
+      "targetParamsKey": "trainedModelFullModelId"
+    }
+  ],
+  "params": []
+}

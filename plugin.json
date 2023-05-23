@@ -10,7 +10,7 @@
         "licenseInfo": "Apache Software License",
         "url": "https://www.dataiku.com/product/plugins/lab-add-ons/",
         "tags": [
-            "Lab", "ML", "webapp","Customer Models"
+            "Lab", "ML", "webapp","Custom Models"
         ],
         "supportLevel": "NOT_SUPPORTED"
     }

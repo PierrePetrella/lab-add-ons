@@ -86,7 +86,8 @@ for cluster_idx, cluster_label in enumerate(cluster_labels):
     for feature in features:
         if feature in cluster_data["num_names"]:
             feat_index = cluster_data["num_names"].index(feature)
-            prop_val = cluster_data["cluster_num_averages"][cluster_idx][feat_index]/cluster_data["num_averages"][feat_index]
+            #prop_val = cluster_data["cluster_num_averages"][cluster_idx][feat_index]/cluster_data["num_averages"][feat_index]
+            prop_val = cluster_data["cluster_num_averages"][cluster_idx][feat_index]
             cluster_summary[cluster_label].append(prop_val)
         elif feature.split(":")[1] in cluster_data["cat_names"]:
             cat_method,feat_name,cat_val = feature.split(":")

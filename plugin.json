@@ -1,16 +1,16 @@
 {
-    "id": "your-plugin-id",
+    "id": "lab-add-ons",
     "version": "0.1.0",
     "meta": {
-        "label": "Plugin template - Replace by your plugin label",
-        "category": "Your category (optional)",
-        "description": "Your description (keep it short and simple)",
-        "author": "Organization (firstName LASTNAME)",
+        "label": "Lab Add Ons",
+        "category": "Lab",
+        "description": "Add Ons for the Lab",
+        "author": "Dataiku (Pierre PETRELLA)",
         "icon": "icon-font-awesome-3.2.1",
         "licenseInfo": "Apache Software License",
-        "url": "https://www.dataiku.com/product/plugins/your-plugin-id/",
+        "url": "https://www.dataiku.com/product/plugins/lab-add-ons/",
         "tags": [
-            "myTag"
+            "Lab", "ML", "webapp","Customer Models"
         ],
         "supportLevel": "NOT_SUPPORTED"
     }

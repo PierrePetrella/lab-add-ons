@@ -109,12 +109,12 @@ for cluster_idx, cluster_label in enumerate(cluster_labels):
             mode = 'lines',
             name = cluster_label,
             line_color = hex_colors[cluster_idx + 40],))
-fig.add_trace(go.Scatterpolar(
-            r = [1]*len(features),
-            theta = features,
-            mode = 'lines',
-            name = "base",
-            line_color = "blue",))
+#fig.add_trace(go.Scatterpolar(
+#            r = [1]*len(features),
+#            theta = features,
+#            mode = 'lines',
+#            name = "base",
+#            line_color = "blue",))
 
 
 app.layout = html.Div([html.H1("Radar charts of clusters"),

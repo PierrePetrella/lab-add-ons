@@ -61,7 +61,7 @@ print (webapp_config)
 client = dataiku.api_client()
 project = client.get_default_project()
 
-def get_clustering_model_details(webapp_config)
+def get_clustering_model_details(webapp_config):
     trained_model_ids = webapp_config["trainedModelFullModelId"].split("-")
     analysis = project.get_analysis(trained_model_ids[2])
     ml_task = analysis.get_ml_task(trained_model_ids[3])

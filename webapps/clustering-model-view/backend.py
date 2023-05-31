@@ -20,12 +20,6 @@ import matplotlib
 
 
 
-#from glm_summary.graph_utils import get_ave_grouped
-#from glm_summary.dku_utils import get_ave_data, get_original_model_handler
-#from generalized_linear_models.dku_glm import BaseGLM
-#from shutil import copytree
-
-
 #def get_model_handler(model, version_id=None):
 #    params = model.get_predictor(version_id).params
 #    return PredictionModelInformationHandler(params.split_desc, params.core_params, params.model_folder,
@@ -62,6 +56,7 @@ dash_webapp_assets = app.config.assets_folder
 print(
     f"Copying Webapp assets from directory '{webapp_plugin_assets}' into directory '{dash_webapp_assets}'"
 )
+print (webapp_config)
 
 client = dataiku.api_client()
 project = client.get_default_project()

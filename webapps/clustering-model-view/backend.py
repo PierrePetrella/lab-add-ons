@@ -117,8 +117,8 @@ fig.add_trace(go.Scatterpolar(
 
 
 app.layout = html.Div([html.H1("Radar charts of clusters"),
-                       html.H3("cluster avg./general feature avg for numerical features"),
-                       html.H3("Category proportion for categorical features"),
+                       html.H3("(Numerical) feature cluster avg./ feature general avg"),
+                       html.H3("(Categorical) Proportion of categorical features"),
                        html.Div(
                           [html.Div(dcc.Graph(figure=fig), style={'display': 'inline-block'}),
                           ],style={'display': 'inline-block', 'text-align': 'justify'}),

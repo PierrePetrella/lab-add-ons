@@ -86,6 +86,7 @@ for cluster_idx, cluster_label in enumerate(cluster_labels):
     for feature in features:
         if feature in cluster_data["num_names"]:
             feat_index = cluster_data["num_names"].index(feature)
+            # Uncomment to divide all the cluster values by their average.
             #prop_val = cluster_data["cluster_num_averages"][cluster_idx][feat_index]/cluster_data["num_averages"][feat_index]
             prop_val = cluster_data["cluster_num_averages"][cluster_idx][feat_index]
             cluster_summary[cluster_label].append(prop_val)
@@ -109,6 +110,7 @@ for cluster_idx, cluster_label in enumerate(cluster_labels):
             mode = 'lines',
             name = cluster_label,
             line_color = hex_colors[cluster_idx + 40],))
+# Uncomment to divide all the cluster values by their average.
 #fig.add_trace(go.Scatterpolar(
 #            r = [1]*len(features),
 #            theta = features,
